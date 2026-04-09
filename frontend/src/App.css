@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Profile header */
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profile-info h2 {
+  margin: 0 0 8px;
+}
+
+.profile-info p {
+  margin: 0 0 4px;
+}
+
+/* Score */
+.score-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #471ee9;
+}
+
+.score-label {
+  color: #888;
+}
+
+.rating-item {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Rental history */
+.history-item {
+  display: flex;
+  gap: 16px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+
+.history-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #5e1ee9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; }
+
+  .score-number {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 8px;
+  }
+
+  h1 { font-size: 18px; }
+  h2 { font-size: 16px; }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+  .score-number {
+    font-size: 28px;
+  }
+
+  .history-item {
+    flex-direction: column;
+  }
+}
